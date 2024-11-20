@@ -6,8 +6,8 @@ app.listen(8080, function() {
     console.log('listening on 8080')
 })
 
-app.use(express.static(path.join(__dirname, 'AdvWebProgramming/build')))
+app.use(express.static(path.join(__dirname, 'book/build')))
 
 app.get('/', function(requirement, respond){
-    respond.sendFile(path.join(__dirname,'AdvWebProgramming/build/index.html'))
+    respond.sendFile(path.join(__dirname,'book/build/index.html'))
 })
