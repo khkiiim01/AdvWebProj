@@ -8,7 +8,7 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="AdvWebProj">
         <div className="App">
           <Header />
           <Routes>
